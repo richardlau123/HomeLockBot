@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lock Home Reminder</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+ 
+    <body class="lockbot-container">
+        <h1>Lockbot</h1>
+
+        <p><input class="btn btn-outline-primary" type="button" value="Set Home" id="home"/></p>
+        <p><input class="btn btn-outline-primary" type="button" value="How far from home?" id="current-location"/></p>
+        <p id="status">Greetings! Lockbot helps remind you to lock the door when you leave the house. Click "Set Home" to begin!</p>
+
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="./client.js"></script>
+    </body>
+</html>
